@@ -1,0 +1,272 @@
+/*
+Theme Name: Twenty Thirteen Child
+Theme URI: http://http://www.artandcode.org//
+Description: Child theme for the Twenty Thirteen theme
+Author: Caroline Wood
+Author URI: http://www.carolinemarie.co.uk/
+Template: twentythirteen
+Version: 1.0
+*/
+
+@import "../twentythirteen/style.css";
+
+html, button, input, select, textarea {
+    font-family: Varela, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.8;
+}
+
+/* ----Set max width for page (previously limited to 1600px)---- */
+.site {
+    max-width: 100%;
+}
+
+/* ----Remove padding from site headings (not being used and they affect layout---- */
+
+.site-title,
+.site-description {
+	padding: 0;
+}
+
+/* ----Increase size of elements so that header img is bigger (as it covers them)---- */
+.site-header .home-link {
+  min-height: 450px;
+}
+
+
+/* ----Increase size of elements so that header img is bigger (as it covers them) at smaller screen sizes---- */
+@media (max-width: 409px) {
+.site-header .home-link {
+    min-height: 125px;
+}
+}
+
+@media (min-width: 410px) {
+.site-header .home-link {
+    min-height: 200px;
+}
+}
+
+@media (min-width: 574px) {
+.site-header .home-link {
+    min-height: 400px;
+}
+}
+
+
+@media (min-width: 1150px) {
+.site-header .home-link {
+    min-height: 600px;
+}
+}
+
+@media (min-width: 1400px) {
+.site-header .home-link {
+    min-height: 900px;
+}
+}
+
+@media (min-width: 2400px) {
+.site-header .home-link {
+    min-height: 1300px;
+}
+}
+
+
+
+/* ----Navigation bar---- */
+
+ 
+.navbar {
+	background: transparent;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+} /* highlights current page in navbar */
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
+    background-color: transparent; 
+} /* sets background as transparent for items in horizontal menu when hovered over */
+
+.menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
+    color: #fff;
+}
+
+@media (max-width: 643px) {
+
+	.menu-menu-1-container {
+		background: rgba(0, 0, 0, 0.3);
+	} /* sets slightly opaque div background on dropdown menu only */
+
+	.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+		border-radius: 0px;
+	} /* removes curved corners on dropdown menu only */
+
+	}
+
+	.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
+			border-radius: 0px;
+			background: none;
+	}/* removes curved corners on dropdown menu only */
+
+	.toggled-on .nav-menu > li a:hover, .toggled-on .nav-menu > ul a:hover {
+			background-color: transparent;
+	} /* sets background as transparent for items in drop-down menu when hovered over */
+
+} /* end of media query */
+
+
+
+
+.menu-toggle {
+    font: bold 100% "varela", Helvetica, sans-serif;
+}
+
+.nav-menu li a {
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-menu li a {
+    font-size: 100%;
+}
+
+
+
+
+
+
+/* ----Headings---- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: normal;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.no-gap-after {
+	margin-bottom: 0;
+} /* close gap between h and p */
+
+/* ----Prevent headings from being bold on small screens---- */
+
+@media (max-width: 643px) {
+.entry-title, .format-chat .entry-title, .format-image .entry-title, .format-gallery .entry-title, .format-video .entry-title {
+    font-weight: 400;
+    font-size: 28px;
+}
+}
+
+/* ----Text and link colours and styling---- */
+
+
+a,
+.entry-content a, 
+.entry-content a:visited, 
+.entry-meta a,
+.entry-meta a:visited, 
+.entry-meta a:hover,
+.entry-title a:hover,
+.navigation a,
+.navigation a:hover,
+.paging-navigation a
+ {
+    color: #6266C8;
+}
+
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+.comment-respond,
+.site-footer,
+.archive-header {
+    background-color: #E1E5FF;
+}
+
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+    background: #6266C8;
+    border-bottom: 0px 
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
+    background: #2F3395;
+}
+
+.comment-reply-title {
+    font: 300 normal 28px "Roboto Slab", Helvetica, sans-serif;
+}
+
+.site-footer .sidebar-container {
+    background-color: #6266C8;
+}
+
+.site-footer .widget-title, 
+.site-footer .widget-title a, 
+.site-footer .wp-caption-text,
+.site-footer a {
+    color: #000062;
+}
+
+.site-footer .widget a {
+    color: #fff;
+}
+
+
+.widget .widget-title {
+    font: 300 normal 20px "Roboto Slab", Helvetica, sans-serif;
+}
+
+.paging-navigation {
+    background-color: #fff
+}
+
+.paging-navigation .meta-nav {
+    background-color: #000062;
+}
+
+.paging-navigation a:hover .meta-nav {
+    background-color: #6266C8;
+}
+
+.entry-content blockquote {
+    font-size: 100%;
+}
+
+.archive-title, .archive-meta {
+    font: 300 italic 30px "Roboto Slab", Helvetica, sans-serif;
+}
+
+
+/* ----Search box and button styling---- */
+
+button, input, textarea {
+    border: none;
+    border-radius: 5px;
+}
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
